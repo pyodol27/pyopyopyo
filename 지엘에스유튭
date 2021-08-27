@@ -1,0 +1,120 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({ Key? key }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: '표형완',
+      home: Grade(),
+    );
+  }
+}
+
+class Grade extends StatelessWidget {
+  const Grade({ Key? key }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.green[100],
+      appBar: AppBar(
+        title: Text('지엘에스 유튜브'),
+        backgroundColor: Colors.green[400],
+        centerTitle: true,
+        elevation: 0.0,
+      ),
+      body: Padding(
+        padding: EdgeInsets.fromLTRB(30.0, 40.0, 0.0, 0.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text('조회수',
+            style: TextStyle(
+              color: Colors.white,
+              letterSpacing: 2.0,
+
+            ),
+        ),
+        SizedBox(
+          height: 10.0,
+        ),
+        Text('영화&드라마',
+        style: TextStyle(
+          color: Colors.white,
+          letterSpacing: 2.0,
+          fontSize: 28.0,
+          fontWeight: FontWeight.bold
+        ),
+        ),
+        SizedBox(
+          height: 30.0,
+        ),
+        Text('컨텐츠',
+            style: TextStyle(
+              color: Colors.white,
+              letterSpacing: 2.0,
+
+            ),
+        ),
+        SizedBox(
+          height: 10.0,
+        ),
+        Text('연기',
+        style: TextStyle(
+          color: Colors.white,
+          letterSpacing: 2.0,
+          fontSize: 28.0,
+          fontWeight: FontWeight.bold
+        ),
+        ),
+        SizedBox(
+          height: 30.0,
+        ),
+        Row(
+          children: [
+            Icon(Icons.check_circle_outline),
+            SizedBox(
+              width: 10.0,
+            ),
+            Text('미안하다 사랑한다',
+            style: TextStyle(fontSize: 16.0,
+            letterSpacing: 1.0),
+            ),
+          ],
+        ),
+        Row(
+          children: [
+            Icon(Icons.check_circle_outline),
+            SizedBox(
+              width: 10.0,
+            ),
+            Text('아저씨',
+            style: TextStyle(fontSize: 16.0,
+            letterSpacing: 1.0),
+            ),
+          ],
+        ),
+        Row(
+          children: [
+            Icon(Icons.check_circle_outline),
+            SizedBox(
+              width: 10.0,
+            ),
+            Text('시크릿 가든',
+            style: TextStyle(fontSize: 16.0,
+            letterSpacing: 1.0),
+            ),
+          ],
+        )
+          ],
+          
+        ),
+      )
+
+    );
+  }
+}
