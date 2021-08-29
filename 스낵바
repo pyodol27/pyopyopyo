@@ -32,8 +32,8 @@ class MySnackBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: ElevatedButton(
-        child: Text('Show me'),
+      child: FloatingActionButton(
+        child: Text('가운데로 어떻게'),
         onPressed: () {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
